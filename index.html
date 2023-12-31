@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <h1>Video</h1>
+    <video onclick="mostrar(this)" id="video_1">
+        <source src="/video/historia-Comp.mp4" type="video/mp4">
+        <source src="/video/historia-Comp.ogv" type="video/ogv">
+    </video>
+    <div class="status"></div>
+    <div class="controles">
+        <div class="controls_modulos" id="porcentual" onclick="reproducir('video_1')">Play</div>
+        <div class="controls_modulos" onclick="ir_a()">ir a</div>
+        <div class="controls_modulos"></div>
+        <div class="controls_modulos"></div>
+        <div class="controls_modulos"><p id="dur"></p></div>
+    </div>
+    <div class="status">
+        <label for="file">File progress:</label>
+        <progress id="file" max="100" value="70">70%</progress>
+    </div>
+    <div class="controles"></div>
+    <div class="controles"><input type="range" name="range" id="range" class="range"></div>
+    <div class="controles"></div>
+    <div class="controles"></div>
+    <div class="controles">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+    </div>
+
+<script src="./video.js"></script>
+</body>
+</html>
