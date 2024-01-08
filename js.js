@@ -14,7 +14,7 @@ const reproducir=(x,y)=>{
     if(video.paused==false){
         video.pause();
         x.classList.add('ctrl_play');
-        x.classList.remove('ctrl_pause');
+        x.classList.remove('ctrl_pause'); //no utilizo toogle, producia errores al cambiar mas de una vez
         stop_temporizador();
     }else{
         video.play();
