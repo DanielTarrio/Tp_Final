@@ -23,9 +23,26 @@ header{
     display: flex;
     justify-content:space-between;
 }
+.ctrl_play{
+    background-image: url('/assets/imagenes/play.svg');
+    background-repeat: no-repeat;
+    background-position: 12px;
+}
+.ctrl_pause{
+    background-image: url('/assets/imagenes/pausa.svg');
+    background-repeat: no-repeat;
+    background-position: 9px;
+}
 .ctrl_video{
     border: 1px solid black;
     border-radius: 5px;
+    width: 32px;
+    height: 32px;
+}
+.ctrl_video:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: slategray;
     width: 32px;
     height: 32px;
 }

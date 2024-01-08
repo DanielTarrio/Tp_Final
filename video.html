@@ -10,20 +10,19 @@
     <header>sdf</header>
     <section>
         <div class="videos">
-            <video id="video_1" width="100%">
-                <source src="/video/historia-Comp.mp4" type="video/mp4">
-                <source src="/video/historia-Comp.ogv" type="video/ogv">
+            <video id="video_1" width="100%" poster="/assets/imagenes/img-video.jpg">
+                <source src="/assets/video/historia-Comp.mp4" type="video/mp4">
+                <source src="/assets/video/historia-Comp.ogv" type="video/ogv">
             </video>
         </div>
         <div class="controles">
-            <div class="ctrl_video">
-            <button onclick="reproducir('video_1')">></button>
+            <div class="ctrl_video ctrl_play" id="play_button" onclick="reproducir(this,'video_1')" >
             </div>
             <div class="ctrl_info">
                 <p class="ctrl_info_p" id="reproducido">00:00</p>
             </div>
             <div class="ctrl_slider">
-            <input type="range" min="1" max="100" value="0" class="barra" id="mi_barra">
+            <input type="range" min="1" max="100" value="0" class="barra" id="mi_barra" oninput="avance('video_1')">
             </div>
             <div class="ctrl_info">
                 <p class="ctrl_info_p" id="duracion">00:00</p>    
