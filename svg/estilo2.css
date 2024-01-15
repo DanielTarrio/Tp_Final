@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(24, 28, 48);
+}
+#monitor{
+    fill: none;
+    stroke-width: 4px;
+    stroke: blue;
+    stroke-dasharray: 1400px;
+    stroke-dashoffset: 900px;
+    animation: svg_animar 3s ease-in forwards;
+}
+#pantalla{
+    fill: none;
+    opacity: 0;
+    stroke-width: 4px;
+    stroke: blue;
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: svg_animar2 3s ease-in forwards;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+#Capa_1{
+    fill: none;
+    stroke-width: 4px;
+    stroke: blue;
+    stroke-dasharray: 1250px;
+    stroke-dashoffset: 1200px;
+    animation: svg_animar 8s ease-in forwards;
+}
+
+#logo_chico{
+    fill: none;
+    stroke-width: 1px;
+    stroke:rgb(24, 28, 48);
+    stroke-dasharray: 900px;
+    stroke-dashoffset: 900px;
+    animation: logo_svg 3s ease-in forwards;
+}
+
+@keyframes logo_svg {
+    0%{
+        stroke:#495579;
+    }
+    50%{
+        stroke:#E6DDC4;
+    }
+    100%{
+        stroke:#f0e9d2;
+        /*stroke-dashoffset: 0px;*/
+        stroke-dasharray: 3000px;
+    }
+    
+}
+
+
+@keyframes svg_animar{
+    to{
+        stroke-dashoffset: 0px;
+    }
+}
+@keyframes svg_animar2{
+    to{
+        stroke-dashoffset: 0px;
+        stroke-dasharray: 3000px;
+        opacity: 1;
+        fill: black;
+    }
+}
