@@ -42,6 +42,13 @@ const avance=(x)=>{
     video.currentTime=video.duration*(document.getElementById("mi_barra").value/100);
 }
 
+const maximizar=(y)=>{
+    video=document.getElementById(y);
+   /* video.width = 1000; */
+    video.fullscreen();
+    console.dir(video);
+}
+
 const stop_temporizador=()=>{
   clearInterval(mi_intervalo);
 }

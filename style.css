@@ -77,7 +77,8 @@ h2{
     text-align: center;
     color: #678983;
 }
-section{
+
+main{
     border: 1px solid black;background-color: #181D31;
     width: 100%;
     box-sizing: content-box;
@@ -115,6 +116,115 @@ section{
     text-decoration: none;
     width: 40%;
     margin-bottom: 20px;
+}
+.hist_ribon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+}
+.hist_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.hist_p{
+    width: 45%;
+    color: #E6DDC4;
+}
+article{
+    width: 100%;
+
+}
+.videos{
+    border: 1px solid black;
+    /*height: 80px;*/
+    width: 800px;
+}
+.controles{
+    border: 1px solid black;
+    background-color: #eeeeee;
+    height: 80px;
+    width: 800px;
+    display: flex;
+    justify-content:space-between;
+}
+.ctrl_play{
+    background-image: url('/assets/imagenes/play.svg');
+    background-repeat: no-repeat;
+    background-position: 12px;
+}
+.ctrl_pause{
+    background-image: url('/assets/imagenes/pausa.svg');
+    background-repeat: no-repeat;
+    background-position: 9px;
+}
+.ctrl_video{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+}
+.ctrl_video:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: slategray;
+    width: 32px;
+    height: 32px;
+}
+.ctrl_info{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 64px;
+    height: 32px;
+}
+.ctrl_slider{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 32px;
+    width: 668px;
+    display: flex;
+}
+.ctrl_info_p{
+    font-size: .8em;
+    margin: 5px;
+}
+.barra {
+    -webkit-appearance: none;
+    width: 600px;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 10px;
+}
+  
+.barra:hover {
+    opacity: 1;
+}
+
+.barra::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 25px;
+    border-radius: 5px; 
+    background: #1d04aa;
+    cursor: pointer;
+}
+  
+.barra::-moz-range-thumb {
+    width: 15px;
+    height: 25px;
+    border-radius: 5px;
+    background: #1d04aa;
+    cursor: pointer;
 }
 footer{
     background-color: #678983;

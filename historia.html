@@ -48,8 +48,70 @@
             <h1 class="titulo">HISTORIA DE LA PROGRAMACION</h1>
         </div>
     </header>
-    <section>
-
-    </section>
+    <main class="hist_main">
+        <div class="hist_ribon">
+            <h2>El principio de la historia de la programación</h2>
+            <p class="hist_p">
+                El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883.
+                Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage.
+                El propósito de este algoritmo era calcular los números de Bernoulli.
+                En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing.
+                Church expresó el cálculo lambda de forma formulativa.
+            </p>
+        </div>
+        <div class="hist_ribon">
+            <p class="hist_p">
+                El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883.
+                Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage.
+                El propósito de este algoritmo era calcular los números de Bernoulli.
+                En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing.
+                Church expresó el cálculo lambda de forma formulativa.
+            </p>
+            <h2>Lenguaje de ensamblaje</h2>
+        </div>
+        <div class="hist_ribon">
+            <h2>Los primeros lenguajes de programación</h2>
+            <p class="hist_p">
+                El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883.
+                Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage.
+                El propósito de este algoritmo era calcular los números de Bernoulli.
+                En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing.
+                Church expresó el cálculo lambda de forma formulativa.
+            </p>
+        </div>
+    </main>
+    <article>
+        <div class="videos">
+            <video id="video_1" width="100%" poster="/assets/imagenes/img-video.jpg">
+                <source src="/assets/video/historia-Comp.mp4" type="video/mp4">
+                <source src="/assets/video/historia-Comp.ogv" type="video/ogv">
+            </video>
+        </div>
+        <div class="controles">
+            <div class="ctrl_video ctrl_play" id="play_button" onclick="reproducir(this,'video_1')" >
+            </div>
+            <div class="ctrl_info">
+                <p class="ctrl_info_p" id="reproducido">00:00</p>
+            </div>
+            <div class="ctrl_slider">
+            <input type="range" min="1" max="100" value="0" class="barra" id="mi_barra" oninput="avance('video_1')">
+            </div>
+            <div class="ctrl_info">
+                <p class="ctrl_info_p" id="duracion">00:00</p>    
+            </div>
+            <div class="ctrl_video ctrl_play" id="play_button" onclick="maximizar('video_1')" >
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="footer_izq">
+            <img class="footer_logo" src="./assets/imagenes/logo.png" alt="logo">
+                <h3 class="footer_titulo">PROGRAMACION <br> E <br> HISTORIA </h3>
+            </div>
+            <div>
+                Sitio con fines educativos - Creado por M.Victoria Lopez
+            </div>
+    </footer>
+    <script src="./js.js"></script>
 </body>
 </html>
