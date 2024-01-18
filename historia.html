@@ -11,7 +11,7 @@
     <nav>
         <div class="nav_content">
             <a href='./index.html'>
-                <svg fill="#000000" height="80px" width="200px" version="1.1" id="logo_chico">
+                <svg fill="#000000" height="80" width="200" version="1.1" id="logo_chico">
                     <g>
                         <path 
                             d="m 84.229196,56.096019 -0.556616,5.257058 c -0.04493,0.424232 -0.285429,-0.31712 0,0 -6.373806,1.662626 -6.800444,1.662626 -6.373806,1.662626 h 31.338286 c 0.42644,0 -6.35126,-1.345706 -6.06583,-1.662626 0.28523,-0.31712 0.0447,0.424232 0,0 l -0.55661,-5.257058 h 19.8129 c 3.08376,0 5.59244,-2.508682 5.59244,-5.592432 V 11.745892 c -2e-4,-3.0837502 -2.50909,-5.5924317 -5.59264,-5.5924317 H 63.212795 c -3.08375,0 -5.592432,2.5086815 -5.592432,5.5924317 v 38.757695 c 0,3.08375 2.508682,5.592432 5.592432,5.592432 z" id="monitor">
@@ -81,27 +81,31 @@
         </div>
     </main>
     <article>
+        <h2>
+            Un breve video para complementar lo visto
+        </h2>
         <div class="videos">
             <video id="video_1" width="100%" poster="/assets/imagenes/img-video.jpg">
                 <source src="/assets/video/historia-Comp.mp4" type="video/mp4">
                 <source src="/assets/video/historia-Comp.ogv" type="video/ogv">
             </video>
+            <div class="controles">
+                <button class="ctrl_video ctrl_play" id="play_button" onclick="reproducir(this,'video_1')" >
+                </button>
+                <div class="ctrl_info">
+                    <p class="ctrl_info_p" id="reproducido">00:00</p>
+                </div>
+                <div class="ctrl_slider">
+                <input type="range" min="1" max="100" value="0" class="barra" id="mi_barra" oninput="avance('video_1')">
+                </div>
+                <div class="ctrl_info">
+                    <p class="ctrl_info_p" id="duracion">00:00</p>    
+                </div>
+                <button class="ctrl_video ctr_maximizar" id="play_button" onclick="maximizar('video_1')" >
+                </button>
+            </div>
         </div>
-        <div class="controles">
-            <div class="ctrl_video ctrl_play" id="play_button" onclick="reproducir(this,'video_1')" >
-            </div>
-            <div class="ctrl_info">
-                <p class="ctrl_info_p" id="reproducido">00:00</p>
-            </div>
-            <div class="ctrl_slider">
-            <input type="range" min="1" max="100" value="0" class="barra" id="mi_barra" oninput="avance('video_1')">
-            </div>
-            <div class="ctrl_info">
-                <p class="ctrl_info_p" id="duracion">00:00</p>    
-            </div>
-            <div class="ctrl_video ctrl_play" id="play_button" onclick="maximizar('video_1')" >
-            </div>
-        </div>
+        
     </article>
     <footer>
         <div class="footer_izq">
@@ -109,7 +113,7 @@
                 <h3 class="footer_titulo">PROGRAMACION <br> E <br> HISTORIA </h3>
             </div>
             <div>
-                Sitio con fines educativos - Creado por M.Victoria Lopez
+                Sitio con fines educativos - Created by M.Victoria Lopez
             </div>
     </footer>
     <script src="./js.js"></script>
