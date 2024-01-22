@@ -1,10 +1,10 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
     background-color: #181D31;
 }
 
@@ -79,7 +79,7 @@ h2{
 }
 
 main{
-    border: 1px solid black;background-color: #181D31;
+    /*border: 1px solid black;background-color: #181D31;*/
     width: 100%;
     box-sizing: content-box;
     display: flex;
@@ -152,7 +152,7 @@ article{
 }
 .controles{
     border: 1px solid black;
-    background-color: #eeeeee;
+    background-color: #2d2d2d;
     height: 80px;
     width: 100%;
     display: flex;
@@ -203,14 +203,14 @@ article{
     transform: translate(3px, 2px);
 }
 .ctrl_info{
-    border: 1px solid black;
+    border: 1px solid #E6DDC4;
     border-radius: 5px;
     width: 64px;
     height: 32px;
     text-align: center;
 }
 .ctrl_slider{
-    border: 1px solid black;
+    border: 1px solid #E6DDC4;
     border-radius: 5px;
     height: 32px;
     width: 668px;
@@ -219,6 +219,7 @@ article{
 .ctrl_info_p{
     font-size: .8em;
     margin: 8px;
+    color: #E6DDC4;
 }
 .barra {
     -webkit-appearance: none;
@@ -243,7 +244,7 @@ article{
     width: 15px;
     height: 25px;
     border-radius: 5px; 
-    background: #1d04aa;
+    background: #678983;
     cursor: pointer;
 }
   
@@ -251,7 +252,7 @@ article{
     width: 15px;
     height: 25px;
     border-radius: 5px;
-    background: #1d04aa;
+    background: #678983;
     cursor: pointer;
 }
 footer{
