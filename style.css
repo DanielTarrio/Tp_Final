@@ -82,8 +82,14 @@ main{
     /*border: 1px solid black;background-color: #181D31;*/
     width: 100%;
     box-sizing: content-box;
-    display: flex;
+    /*display: flex;*/
     margin: 100px 0px;
+    /*justify-content: space-evenly;*/
+}
+section{
+    width: 100%;
+    box-sizing: content-box;
+    display: flex;
     justify-content: space-evenly;
 }
 .card {
@@ -255,6 +261,42 @@ article{
     background: #678983;
     cursor: pointer;
 }
+.container{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+}
+.target_container{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    }
+p{
+    color: #E6DDC4;
+    align-self: center;
+    text-align: center;
+}
+
+.target{
+    border: 1px solid white;
+    width: 275px;
+    height: 400px;
+    background-color: #2d2d2d;
+    display: flex;
+    
+}
+#imagen1, #imagen2, #imagen3
+{
+  width: 275px;
+  height: 400px;
+}
+
 footer{
     background-color: #678983;
     height: 100px;
@@ -287,7 +329,7 @@ footer{
     stroke: #f0e9d2;
     stroke-dasharray: 300px;
     stroke-dashoffset: 300px;
-    animation: svg_animar 3s ease-in forwards;
+    animation: svg_animar 2s ease-in forwards;
 }
 #pantalla{
     fill: none;
@@ -296,7 +338,7 @@ footer{
     stroke: #f0e9d2;
     stroke-dasharray: 100px;
     stroke-dashoffset: 100px;
-    animation: pantalla_svg 3s ease-in forwards;
+    animation: pantalla_svg 2s ease-in forwards;
     /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
 #teclado{
@@ -305,7 +347,7 @@ footer{
     stroke: #f0e9d2;
     stroke-dasharray: 150px;
     stroke-dashoffset: 100px;
-    animation: svg_animar 3s ease-in forwards;
+    animation: svg_animar 2s ease-in forwards;
 }
 #mouse{
     fill: none;
@@ -313,7 +355,7 @@ footer{
     stroke: #f0e9d2;
     stroke-dasharray: 100px;
     stroke-dashoffset: 100px;
-    animation: svg_animar 3s ease-in forwards;
+    animation: svg_animar 2s ease-in forwards;
 }
 #teclas{
     fill: none;
@@ -322,6 +364,11 @@ footer{
     stroke-dasharray: 100px;
     stroke-dashoffset: 100px;
     animation: svg_animar2 3s ease-in forwards;
+}
+#logo_svg{
+    opacity: 0;
+    stroke: #000;
+    animation: titulo_animar 1s ease-in forwards 3s;
 }
 
 @keyframes titulo_animar{
