@@ -82,9 +82,9 @@ main{
     /*border: 1px solid black;background-color: #181D31;*/
     width: 100%;
     box-sizing: content-box;
-    /*display: flex;*/
+    display: flex;
     margin: 100px 0px;
-    /*justify-content: space-evenly;*/
+    justify-content: space-evenly;
 }
 section{
     width: 100%;
@@ -228,7 +228,7 @@ article{
     color: #E6DDC4;
 }
 .barra {
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
     width: 100%;
     height: 15px;
     border-radius: 5px;  
@@ -271,6 +271,8 @@ article{
 }
 .target_container{
     border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -281,18 +283,18 @@ p{
     color: #E6DDC4;
     align-self: center;
     text-align: center;
-}
+    width: 100%;
 
+}
 .target{
     border: 1px solid white;
     width: 275px;
     height: 400px;
     background-color: #2d2d2d;
     display: flex;
-    
 }
-#imagen1, #imagen2, #imagen3
-{
+
+.img_juego{
   width: 275px;
   height: 400px;
 }

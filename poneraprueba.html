@@ -50,31 +50,32 @@
     </header>
     <main>
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
-        <section>
-            <div class="container">
-                <div class="target_container">
-                    <div class="target"><p>Arrastre y suelte la imágene aquí</p></div>
-                    <div class="target"><p>Arrastre y suelte la imágene aquí</p></div>
-                    <div class="target"><p>Arrastre y suelte la imágene aquí</p></div>
-                </div>
-                <div class="target_container">
-                    <img id="imagen1" src="/assets/imagenes/rompe2.png" alt="">
-                    <img id="imagen2" src="/assets/imagenes/Rompe1.png" alt="">
-                    <img id="imagen3" src="/assets/imagenes/Rompe3.png" alt="">
-                </div>
+    </main>    
+    <section>
+        <div class="container">
+            <div id="target_padre" class="target_container">
+                <div id="target1" class="target" ondrop="soltar(event)" ondragover="sobre_target(event)"><p>Arrastre y suelte la imágene aquí</p></div>
+                <div id="target2" class="target" ondrop="soltar(event)" ondragover="sobre_target(event)"><p>Arrastre y suelte la imágene aquí</p></div>
+                <div id="target3" class="target" ondrop="soltar(event)" ondragover="sobre_target(event)"><p>Arrastre y suelte la imágene aquí</p></div>
             </div>
-        </section>
+            <div class="target_container">
+                <img id="imagen1" src="/assets/imagenes/rompe2.png" ondragstart="Inicio_drag(event)" class="img_juego" alt="Imagen rompecabezas">
+                <img id="imagen2" src="/assets/imagenes/Rompe1.png" ondragstart="Inicio_drag(event)" class="img_juego" alt="Imagen rompecabezas">
+                <img id="imagen3" src="/assets/imagenes/Rompe3.png" ondragstart="Inicio_drag(event)" class="img_juego" alt="Imagen rompecabezas">
+            </div>
+        </div>
+    </section>
         
-    </main>
+    
     <footer>
         <div class="footer_izq">
-            <img class="footer_logo" src="./assets/imagenes/logo.png" alt="logo">
+            <img class="footer_logo" src="/assets/imagenes/logo.png" alt="logo">
                 <h3 class="footer_titulo">PROGRAMACION <br> E <br> HISTORIA </h3>
             </div>
             <div>
                 Sitio con fines educativos - Created by M.Victoria Lopez
             </div>
     </footer>
-    <script src="./juegos.js"></script>
+    <script src="/juguemos.js"></script>
 </body>
 </html>
